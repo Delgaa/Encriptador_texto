@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #E9ECF8;
+}
+
+#logo{
+    margin: 20px 0 0 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#text{
+    height: 50vh;
+    width: 90%;
+    font-size: 20px;
+    color: #0A3871;
+    padding: 5px;
+    border: none;
+    background-color: #E9ECF8;
+    resize: none;
+}
+
+#text::placeholder{
+    width: 90%;
+    font-size: 25px;
+    color: #0A3871;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+#muneco{
+    display: none;
+}
+#btn-encriptar{
+    background-color: #0A3871;
+    color: white;
+    width: 343px;
+    height: 57px;
+    font-size: 19px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer
+}
+
+#btn-desencriptar{
+    background-color: #E9ECF8  ;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    width: 343px;
+    height: 57px;
+    font-size: 19px;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+#copy{
+    background-color: #E9ECF8  ;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    width: 80%;
+    height: 57px;
+    font-size: 19px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#warning{
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    margin: 50px 0 30px 0;
+    height: 186px;
+    width: 90%;
+    border: 1px;
+    border-radius: 20px;
+    gap: 5px;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 10px 0px 139px -58px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 139px -58px rgba(0,0,0,1);
+    box-shadow: 10px 0px 139px -58px rgba(0,0,0,1);
+}
+h2{
+    width: 80%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+p{
+    width: 60%;
+    width: 100%;
+    font-size: 16px;
+    color: #495057;
+    font-weight: 400;
+}
+#encript{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 30px 0;
+    width: 90%;
+    border: 1px;
+    border-radius: 20px;
+    gap: 5px;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 10px 0px 139px -58px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 139px -58px rgba(0,0,0,1);
+    box-shadow: 10px 0px 139px -58px rgba(0,0,0,1);
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1440px){
+    #text{
+        width: 55vw;
+        margin-top: 140px;
+    }
+    .container{
+        justify-content: space-around;
+    }
+
+    #result{
+        width: 30vw;
+        height: 80vh;
+    }
+    #logo{
+    position: absolute;
+
+    }
+    #muneco{
+        display: block;
+    }
+
+    #encript{
+        width: 30vw;
+        height: 80vh;
+    }
+}

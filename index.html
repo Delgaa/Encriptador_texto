@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/Vector.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Encriptador de tex</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="assets/images/Vector.svg" alt="logo_alura">
+    </header>
+    <main class="container">
+        <div class="text-container">
+            <textarea id="text" placeholder="Ingrese el texto aqui"></textarea>
+            <p id="warning"><img src="assets/images/exclamation-circle.svg" alt="">Solo letras minusculas y sin acentos.</p>
+            <div id="buttons">
+                <button id="btn-encriptar">Encriptar</button>
+                <button id="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+            <section id="result">
+                <img id="muneco" src="assets/images/Muñeco.png" alt="Muñeco">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+        <div id="encript">
+            <p id="outputText"></p>
+            <button id="copy">Copiar</button>
+        </div>
+    </main>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
